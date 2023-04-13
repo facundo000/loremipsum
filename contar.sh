@@ -1,6 +1,7 @@
 #!/bin/bash
-for archivo in *.txt
+
+for file in loremipsum-*.txt
 do
-    num_lineas=$(wc -l < "$archivo")
-    echo "$archivo tiene $num_lineas líneas."
+    lines=$(wc -l < $file)
+    echo "$file tiene $lines líneas."
 done
